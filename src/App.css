@@ -17,20 +17,34 @@
   --color-stroke-neutral-strong: #D1D5DB;
   --color-stroke-error: #EF4444;
 
+  --font-family-text: "Inter", sans-serif;
 
-  --font-family-text: "Inclusive Sans", sans-serif;
+  --font-feature-settings-heading: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on;
+  --font-feature-settings-text: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on;
 
+  --font-size-2xs: 0.625rem;
+  --font-size-sm: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
+
+  --font-weight-heading-weak: 550;
+  --font-weight-heading: 600;
 
   --font-weight-text: 400;
   --font-weight-text-strong: 500;
   --font-weight-text-stronger: 600;
 
+  --line-height-2xs: 1rem;
+  --line-height-xs: 1rem;
   --line-height-sm: 1.25rem;
   --line-height-md: 1.5rem;
 
   --magin-tighter: 0.5rem;
+  --magin-tight: 0.75rem;
+  --magin-loose: 1.5rem;
+
+  --padding-block-container: 1.5rem;
+  --padding-inline-container: 1.5rem;
 
   --padding-block-element-tight: 0.25rem;
   --padding-inline-element-tight: 0.5rem;
@@ -56,6 +70,7 @@
   border-radius: var(--border-radius-rounded);
   color: var(--color-foreground-neutral);
   font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-text);
   line-height: var(--line-height-sm);
