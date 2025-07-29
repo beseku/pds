@@ -1,0 +1,27 @@
+{
+  "app": {
+    "menu": {
+      "inputs": "Entradas",
+      "numberInput": "Entrada Numero",
+      "textInput": "Entrada Texto"
+    }
+  },
+  "inputs": {
+    "NumberInputPage": {
+      "example": {
+        "label": "En la madriguera del conejo",
+        "placeholder": "0",
+        "description": "Al principio, la madriguera del conejo se extendía en línea recta como un túnel, y después torció bruscamente hacia abajo",
+        "error": "Tan bruscamente que Alicia no tuvo siquiera tiempo de pensar en detenerse y se encontró cayendo por lo que parecia un pozo muy profundo"
+      }
+    },
+    "textInputPage": {
+      "example": {
+        "label": "En la madriguera del conejo",
+        "placeholder": "En la madriguera del conejo",
+        "description": "Al principio, la madriguera del conejo se extendía en línea recta como un túnel, y después torció bruscamente hacia abajo",
+        "error": "Tan bruscamente que Alicia no tuvo siquiera tiempo de pensar en detenerse y se encontró cayendo por lo que parecia un pozo muy profundo"
+      }
+    }
+  }
+}

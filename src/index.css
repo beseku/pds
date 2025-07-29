@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-variable.woff2?v=4.1') format('woff2');
+}
+
+@font-face {
+  font-family: "inter";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/inter-variable-italic.woff2?v=4.1') format('woff2');
+}
 
 :root {
   --border-radius-circular: 100%;
@@ -19,13 +33,14 @@
   --color-stroke-neutral-strong: #D1D5DB;
   --color-stroke-error: #EF4444;
 
-  --font-family-text: "Inter", sans-serif;
+  --font-family-text: "inter", sans-serif;
 
-  --font-feature-settings-heading: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on;
-  --font-feature-settings-text: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on;
+  --font-feature-settings-heading: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on, "zero" on, "ss03" on;
+  --font-feature-settings-text: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on, "zero" on, "ss03" on;
+  --font-feature-settings-data: "cv01" on, "cv02" on, "cv03" on, "cv04" on, "cv08" on, "cv09" on, "cv10" on, "cv11" on, "zero" on, "ss03" on;
 
   --font-size-2xs: 0.625rem;
-  --font-size-sm: 0.75rem;
+  --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
 
@@ -63,12 +78,12 @@
 }
 
 * {
+  font-family: var(--font-family-text);
+  font-feature-settings: (--font-feature-settings-text);
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-text);
+  line-height: var(--line-height-md);
+  list-style: none;
   margin: unset;
   padding: unset;
-}
-
-dl,
-ol,
-ul {
-  list-style: none
 }

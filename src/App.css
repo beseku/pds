@@ -1,3 +1,13 @@
+.mantine-Input-input {
+  div {
+    font-family: var(--font-family-text);
+    font-feature-settings: var(--font-feature-settings-text);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-text);
+    line-height: var(--line-height-sm);
+  }
+}
+
 .mantine-Input-wrapper {
   margin: unset;
 }
@@ -63,6 +73,7 @@
 .mantine-InputWrapper-label {
   color: var(--color-foreground-neutral);
   font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-text-strong);
   line-height: var(--line-height-sm);
@@ -71,6 +82,7 @@
 .mantine-InputWrapper-description {
   color: var(--color-foreground-neutral-weak);
   font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-text);
   line-height: var(--line-height-sm);
@@ -79,6 +91,7 @@
 .mantine-InputWrapper-error {
   color: var(--color-foreground-error);
   font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-text);
   line-height: var(--line-height-sm);
