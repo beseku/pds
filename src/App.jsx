@@ -1,15 +1,15 @@
 // React Router [https://reactrouter.com]
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 
 // react-i18next [https://react.i18next.com]
-import { useTranslation } from 'react-i18next';
-import './i18n';
+import { useTranslation } from "react-i18next";
+import "./i18n";
 
-import HomePage from './pages/HomePage'
-import NumberInputPage from './pages/inputs/NumberInputPage'
-import TextInputPage from './pages/inputs/TextInputPage'
+import HomePage from "./pages/home-page"
+import NumberInputPage from "./pages/inputs/number-input-page"
+import TextInputPage from "./pages/inputs/text-input-page"
 
-import './app.css'
+import "./app.css"
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -21,17 +21,17 @@ function App() {
           <div style={{ flexGrow: "1", paddingInline: "var(--padding-inline-container)", paddingBlock: "var(--padding-block-container)", borderBottom: "solid 1px var(--color-stroke-neutral)" }}>  
             <div style={{ display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent: "flexStart", gap: "var(--magin-tight)" }}>
               <h1 style={{ color: "var(--color-foreground-neutral-weak)", fontFamily: "var(--font-family-text)", fontFeatureSettings: "var(--font-feature-settings-heading)", fontSize: "var(--font-size-2xs)", fontWeight: "var(--font-weight-heading)", letterSpacing: "0.1em", lineHeight: "var(--line-height-2xs)", textTransform: "uppercase" }}>
-                { t('app.menu.inputs') }
+                { t("app.menu.inputs") }
               </h1>
               <ul style={{ display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent: "flexStart", gap: "var(--magin-tighter)" }}>
                 <li>
                   <Link style={{ color: "var(--color-foreground-neutral)", fontFamily: "var(--font-family-text)", fontFeatureSettings: "var(--font-feature-settings-text)", fontSize: "var(--font-size-sm)", fontWeight: "var(--font-weight-text)", lineHeight: "var(--line-height-sm)", textDecoration: "none" }} to="/inputs/number-input">
-                    { t('app.menu.numberInput') }
+                    { t("app.menu.numberInput") }
                   </Link>
                 </li>
                 <li>
                   <Link style={{ color: "var(--color-foreground-neutral)", fontFamily: "var(--font-family-text)", fontFeatureSettings: "var(--font-feature-settings-text)", fontSize: "var(--font-size-sm)", fontWeight: "var(--font-weight-text)", lineHeight: "var(--line-height-sm)", textDecoration: "none" }} to="/inputs/text-input">
-                    { t('app.menu.textInput') }
+                    { t("app.menu.textInput") }
                   </Link>
                 </li>
               </ul>
