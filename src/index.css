@@ -21,13 +21,21 @@
   --box-shadow-lower: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, 0.05);
 
   --color-background-default: #FFFFFF;
+
   --color-background-neutral-weak: #F9FAFB;
   --color-background-neutral: #F3F4F6;
   --color-background-neutral-strong: #E5E7EB;
+
+  --color-background-neutral-reverse: #111827;
+
   --color-foreground-neutral-weaker: #9CA3AF;
   --color-foreground-neutral-weak: #6B7280;
   --color-foreground-neutral: #111827;
+
+  --color-foreground-neutral-reverse: #FFFFFF;
+
   --color-foreground-error: #DC2626;
+
   --color-stroke-neutral-weaker: #F3F4F6;
   --color-stroke-neutral: #E5E7EB;
   --color-stroke-neutral-strong: #D1D5DB;
@@ -44,12 +52,10 @@
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
 
-  --font-weight-heading-weak: 550;
-  --font-weight-heading: 600;
-
-  --font-weight-text: 400;
-  --font-weight-text-strong: 500;
-  --font-weight-text-stronger: 600;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
 
   --line-height-2xs: 1rem;
   --line-height-xs: 1rem;
@@ -70,6 +76,7 @@
   --padding-block-element-loose: 0.5rem;
   --padding-inline-element-loose: 0.75rem;
 
+  --size-md: 1.5rem;
   --size-lg: 1.75rem;
   --size-xl: 2rem;
   --size-2xl: 2.25rem;
@@ -81,7 +88,7 @@
   font-family: var(--font-family-text);
   font-feature-settings: (--font-feature-settings-text);
   font-size: var(--font-size-md);
-  font-weight: var(--font-weight-text);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-md);
   list-style: none;
   margin: unset;

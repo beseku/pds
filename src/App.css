@@ -3,7 +3,7 @@
     font-family: var(--font-family-text);
     font-feature-settings: var(--font-feature-settings-text);
     font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-text);
+    font-weight: var(--font-weight-regular);
     line-height: var(--line-height-sm);
   }
 }
@@ -20,7 +20,7 @@
   font-family: var(--font-family-text);
   font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-text);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-sm);
   padding-block: var(--padding-block-element-tight);
   padding-inline: var(--padding-inline-element-tight);
@@ -75,7 +75,7 @@
   font-family: var(--font-family-text);
   font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-text-strong);
+  font-weight: var(--font-weight-medium);
   line-height: var(--line-height-sm);
 }
 
@@ -84,7 +84,7 @@
   font-family: var(--font-family-text);
   font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-text);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-sm);
 }
 
@@ -93,6 +93,57 @@
   font-family: var(--font-family-text);
   font-feature-settings: var(--font-feature-settings-text);
   font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-text);
+  font-weight: var(--font-weight-regular);
   line-height: var(--line-height-sm);
+}
+
+.mantine-Stepper-steps {
+  gap: var(--magin-loose);
+}
+
+.mantine-Stepper-step {}
+
+.mantine-Stepper-stepWrapper {}
+
+.mantine-Stepper-stepIcon {
+  --stepper-icon-size: var(--size-md);
+
+  background-color: var(--color-background-neutral);
+  color: var(--color-foreground-neutral-weak);
+  font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-xs);
+
+  border: none;
+}
+
+.mantine-Stepper-step[data-progress=true] .mantine-Stepper-stepIcon {
+  background-color: var(--color-background-neutral-reverse);
+  color: var(--color-foreground-neutral-reverse);
+}
+
+.mantine-Stepper-stepCompletedIcon {
+  color: var(--color-foreground-neutral);
+}
+
+.mantine-Stepper-stepBody {
+  margin-inline-start: var(--magin-tighter);
+}
+
+.mantine-Stepper-stepLabel {
+  color: var(--color-foreground-neutral-weak);
+  font-family: var(--font-family-text);
+  font-feature-settings: var(--font-feature-settings-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-sm);
+}
+
+.mantine-Stepper-separator {
+  background-color: var(--color-stroke-neutral);
+  margin-inline: 0;
+  height: 1px;
+  width: 3rem;
 }
